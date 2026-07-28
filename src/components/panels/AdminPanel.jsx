@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'Node.js + Express',     type: 'orange' },
-  { label: 'MySQL Railway',         type: 'blue' },
-  { label: 'Vercel / Render',       type: 'orange' },
-  { label: 'CRUD Admin',            type: 'blue' },
-  { label: 'Gmail API Poller',      type: 'orange' },
-  { label: 'Puntos Fidelidad',      type: 'blue' },
+  { label: 'Arquitectura Cloud Robusta', type: 'orange' },
+  { label: 'Base de Datos de Alta Velocidad', type: 'blue' },
+  { label: 'Disponibilidad 24/7', type: 'orange' },
+  { label: 'Gestión Integral de Tienda', type: 'blue' },
+  { label: 'Centralización de Soporte', type: 'orange' },
+  { label: 'Programa de Recompensas', type: 'blue' },
 ]
 
 export default function AdminPanel() {
@@ -26,7 +26,7 @@ export default function AdminPanel() {
           marginBottom: 8,
         }}
       >
-        11 — Backend &amp; Administración
+        07 — Gestión & Operaciones
       </p>
 
       <h2
@@ -41,14 +41,13 @@ export default function AdminPanel() {
           letterSpacing: -0.5,
         }}
       >
-        Arquitectura y Admin
+        Panel de Control
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Backend con Node.js + Express y MySQL en Railway. Frontend en Vercel, API
-        en Render. Panel de administración con CRUD de productos, categorías,
-        envíos y pedidos. Soporte con Gmail API Poller que lee correos entrantes
-        y los vincula a tickets. Sistema de fidelidad con puntos por compra.
+        Infraestructura en la nube optimizada para alta concurrencia. Panel de control 
+        centralizado para administrar inventario, envíos y ventas en tiempo real, 
+        con automatización de tickets de soporte y fidelización de clientes.
       </p>
 
       <div
