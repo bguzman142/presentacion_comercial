@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'Vista Grilla',           type: 'orange' },
-  { label: 'Galería Interactiva',    type: 'blue' },
-  { label: 'Hover Swap',             type: 'orange' },
-  { label: 'Zoom Drag',              type: 'blue' },
-  { label: 'Especificaciones',       type: 'orange' },
-  { label: 'Filtros por Categoría',  type: 'blue' },
+  { label: 'Exhibición Dinámica', type: 'orange' },
+  { label: 'Ficha Interactiva de Producto', type: 'blue' },
+  { label: 'Vista Previa Instantánea', type: 'orange' },
+  { label: 'Detalle HD & Zoom', type: 'blue' },
+  { label: 'Guía de Talles y Métricas', type: 'orange' },
+  { label: 'Filtros de Búsqueda Avanzados', type: 'blue' },
 ]
 
 export default function CatalogPanel() {
@@ -26,7 +26,7 @@ export default function CatalogPanel() {
           marginBottom: 8,
         }}
       >
-        05 — Catálogo &amp; Navegación
+        03 — Catálogo & Navegación Comercial
       </p>
 
       <h2
@@ -41,13 +41,13 @@ export default function CatalogPanel() {
           letterSpacing: -0.5,
         }}
       >
-        Catálogo y Navegación
+        Catálogo Interactivo
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Vista de grilla con cards glassmorphism, galería interactiva con hover swap
-        y zoom drag en la vista detalle. Filtros por categoría, franquicia y rango
-        de precio con ordenamiento dinámico.
+        Catálogo enfocado en reducir la fricción de compra.
+        Presentación visual de alto impacto con vistas rápidas, inspección detallada de prendas 
+        y filtros dinámicos que aceleran la decisión del comprador.
       </p>
 
       <div
@@ -100,7 +100,7 @@ export default function CatalogPanel() {
           letterSpacing: 2,
         }}
       >
-        "Cada producto cuenta una historia. Nosotros la contamos bien."
+        "Facilidad de descubrimiento para maximizar cada visita."
       </motion.p>
     </GlassPanel>
   )
