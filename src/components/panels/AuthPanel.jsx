@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'JWT + Bcryptjs',     type: 'orange' },
-  { label: 'Login 2 Pasos',      type: 'blue' },
-  { label: 'Google OAuth 2.0',   type: 'orange' },
-  { label: 'Recuperación Email', type: 'blue' },
-  { label: 'Recordar Dispositivo', type: 'orange' },
-  { label: 'Verificación Código', type: 'blue' },
+  { label: 'Protección de Datos', type: 'orange' },
+  { label: 'Verificación en 2 Pasos', type: 'blue' },
+  { label: 'Acceso Directo con Google', type: 'orange' },
+  { label: 'Recuperación de Cuenta', type: 'blue' },
+  { label: 'Inicio de Sesión Seguro', type: 'orange' },
+  { label: 'Verificación por Código', type: 'blue' },
 ]
 
 export default function AuthPanel() {
@@ -26,7 +26,7 @@ export default function AuthPanel() {
           marginBottom: 8,
         }}
       >
-        06 — Autenticación &amp; Seguridad
+        06 — Seguridad & Gestión de Usuarios
       </p>
 
       <h2
@@ -41,13 +41,13 @@ export default function AuthPanel() {
           letterSpacing: -0.5,
         }}
       >
-        Autenticación y Seguridad
+        Acceso y Confianza
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Registro y login con JWT y Bcryptjs para hash de contraseñas. Autenticación
-        en dos pasos vía email + código, Google OAuth con flujo de redirección
-        mediante id_token, y recuperación de cuentas por correo.
+        Experiencia de registro y login rápida que brinda máxima tranquilidad al comprador. 
+        Soporta registro tradicional con doble factor de autenticación e integración 
+        en 1-clic con cuentas de Google para agilizar la entrada al catálogo.
       </p>
 
       <div
