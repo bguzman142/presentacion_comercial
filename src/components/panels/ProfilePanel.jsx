@@ -26,7 +26,7 @@ export default function ProfilePanel() {
           marginBottom: 8,
         }}
       >
-        09 — Experiencia de Usuario
+        05 — Experiencia de Usuario
       </p>
 
       <h2
