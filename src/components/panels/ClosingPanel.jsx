@@ -167,7 +167,7 @@ export default function ClosingPanel() {
           marginBottom: 20,
         }}
       >
-        {['Máximo Fuentes', 'Santiago Zufia','Bautista Delluniversidad', 'Gaspar Barroso', 'Bruno Guzmán', 'Ignacio Povolo'].map((name) => (
+        {['Máximo Fuentes', 'Santiago Zufia', 'Bautista Delluniversidad', 'Gaspar Barroso', 'Bruno Guzmán', 'Ignacio Povolo'].map((name) => (
           <div key={name} className="chip chip-orange" style={{ fontSize: 18, padding: '12px 24px' }}>
             <span className="chip-dot chip-dot-orange" />
             {name}
