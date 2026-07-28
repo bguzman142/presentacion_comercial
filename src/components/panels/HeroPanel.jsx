@@ -97,7 +97,7 @@ export default function HeroPanel() {
           marginBottom: 8,
         }}
       >
-        Plataforma Comercial de Moda & Streetwear
+        UNIVERSIDAD DEL ACONCAGUA - PROYECTO INTEGRADOR
       </motion.p>
 
       <motion.div
