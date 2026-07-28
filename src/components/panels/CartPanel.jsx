@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'Carrito Persistente',    type: 'orange' },
-  { label: 'Wishlist Favoritos',     type: 'blue' },
-  { label: 'Sidebars Deslizables',   type: 'orange' },
-  { label: 'Sincronización Server',  type: 'blue' },
-  { label: 'Barra Envío Gratis',     type: 'orange' },
-  { label: 'Context API Global',     type: 'blue' },
+  { label: 'Persistencia de Orden', type: 'orange' },
+  { label: 'Guardado en Wishlist', type: 'blue' },
+  { label: 'Navegación Deslizante', type: 'orange' },
+  { label: 'Sincronización en Tiempo Real', type: 'blue' },
+  { label: 'Incentivos de Envío Gratis', type: 'orange' },
+  { label: 'Gestión de Pedidos Fluida', type: 'blue' },
 ]
 
 export default function CartPanel() {
@@ -26,7 +26,7 @@ export default function CartPanel() {
           marginBottom: 8,
         }}
       >
-        08 — Carrito &amp; Estado Global
+        04 — Experiencia de Compra & Retención
       </p>
 
       <h2
@@ -45,9 +45,9 @@ export default function CartPanel() {
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Carrito persistente con sidebars deslizables, sincronización en tiempo real
-        con el servidor, wishlist de favoritos, barra de progreso interactiva para
-        envío gratis y manejo de estado global con Context API.
+        Carrito de compras optimizado para minimizar carritos abandonados. 
+        Incluye persistencia de sesión, lista de deseos para recompra, alertas dinámicas de envío 
+        y actualización instantánea del carrito sin recargar la página.
       </p>
 
       <div
