@@ -26,7 +26,7 @@ export default function PaymentsPanel() {
           marginBottom: 8,
         }}
       >
-        05 — Soluciones de Pago Flexibles
+        07 — Soluciones de Pago Flexibles
       </p>
 
       <h2
