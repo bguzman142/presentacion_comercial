@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'Chatbot Llama 3',       type: 'orange' },
-  { label: 'Groq API Directa',      type: 'blue' },
-  { label: 'Búsqueda Semántica',    type: 'orange' },
-  { label: 'Gemini IA',             type: 'blue' },
-  { label: 'Cron 60s Stock',        type: 'orange' },
-  { label: 'Cancelación Expiración', type: 'blue' },
+  { label: 'Asistente Virtual 24/7', type: 'orange' },
+  { label: 'Consultas en Tiempo Real', type: 'blue' },
+  { label: 'Recomendaciones Inteligentes', type: 'orange' },
+  { label: 'Búsqueda por Descripcion', type: 'blue' },
+  { label: 'Inventario Dinámico', type: 'orange' },
+  { label: 'Gestión Automática de Stock', type: 'blue' },
 ]
 
 export default function IAPanel() {
@@ -26,7 +26,7 @@ export default function IAPanel() {
           marginBottom: 8,
         }}
       >
-        10 — Inteligencia Artificial
+        08 — Inteligencia Artificial
       </p>
 
       <h2
@@ -41,14 +41,13 @@ export default function IAPanel() {
           letterSpacing: -0.5,
         }}
       >
-        IA y Automatizaciones
+        Automatización Avanzada
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Chatbot inteligente con Groq API usando Llama 3 mediante fetch directo,
-        capaz de consultar órdenes por ID o email. Búsqueda semántica en el
-        catálogo con Gemini (Google Generative AI). Tareas programadas que
-        cancelan pedidos expirados cada 60s y restauran stock en MySQL.
+        Asistente virtual conversacional para rastreo automático de pedidos e interacción fluida. 
+        Búsqueda contextual e intuitiva dentro del catálogo y mantenimiento 
+        automatizado de inventarios para evitar reservas vencidas.
       </p>
 
       <div
