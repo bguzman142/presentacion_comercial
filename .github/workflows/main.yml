@@ -3,6 +3,9 @@ name: Clonar Proyecto
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   copy-repo:
     runs-on: ubuntu-latest
@@ -10,19 +13,20 @@ jobs:
       - name: Checkout de tu repo
         uses: actions/checkout@v4
 
-      - name: Clonar y sobreescribir archivos
+      - name: Clonar repo original
+        run: |
+          git clone https://github.com/maxifuentes2/presentacionFinal.git temp_repo
+
+      - name: Copiar archivos y pushear
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Clonar repo original en carpeta temporal
-          git clone https://github.com/maxifuentes2/presentacionFinal.git temp_repo
-          
-          # Copiar todo exceptuando la carpeta .git para no romper el historial
-          rsync -av --exclude='.git' temp_repo/ ./
+          # Copiar todo menos la carpeta .git del repo original
+          cp -r temp_repo/* .
           rm -rf temp_repo
           
-          # Subir cambios
+          # Subir los cambios a tu repo
           git add .
-          git commit -m "Copia limpia del repositorio base" || echo "Sin cambios"
+          git commit -m "Copia completa de archivos" || echo "Sin cambios"
           git push origin main
