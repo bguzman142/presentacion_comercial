@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'Direcciones Envío',   type: 'orange' },
-  { label: 'Gestión Intereses',   type: 'blue' },
-  { label: 'Perfil Personal',     type: 'orange' },
-  { label: 'Historial Pedidos',   type: 'blue' },
-  { label: 'Puntos Acumulados',   type: 'orange' },
-  { label: 'Preferencias UI',     type: 'blue' },
+  { label: 'Múltiples Direcciones', type: 'orange' },
+  { label: 'Recomendaciones a Medida', type: 'blue' },
+  { label: 'Centro de Cuenta', type: 'orange' },
+  { label: 'Seguimiento de Compras', type: 'blue' },
+  { label: 'Beneficios por Fidelidad', type: 'orange' },
+  { label: 'Personalización Visual', type: 'blue' },
 ]
 
 export default function ProfilePanel() {
@@ -26,7 +26,7 @@ export default function ProfilePanel() {
           marginBottom: 8,
         }}
       >
-        07 — Perfil de Usuario
+        09 — Experiencia de Usuario
       </p>
 
       <h2
@@ -41,13 +41,13 @@ export default function ProfilePanel() {
           letterSpacing: -0.5,
         }}
       >
-        Perfil y Preferencias
+        Perfil de Usuario
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Gestión completa del perfil con direcciones de envío guardadas, intereses
-        personalizados para recomendaciones, historial de pedidos y selector de
-        preferencias de interfaz.
+        Espacio personal para el usuario con guardado rápido de direcciones para envíos, 
+        historial claro de compras realizas, catálogo adaptado a gustos 
+        personales y ajuste de preferencias para la interfaz.
       </p>
 
       <div
