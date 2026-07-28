@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'Dark Mode Nativo',   type: 'orange' },
-  { label: 'Responsive Total',   type: 'blue' },
-  { label: 'Glassmorphism UI',   type: 'orange' },
-  { label: 'Multi-Moneda',       type: 'blue' },
-  { label: 'Sidebar Categorías', type: 'orange' },
-  { label: 'Modo Flexbox Grid',  type: 'blue' },
+  { label: 'Retención de Usuarios', type: 'orange' },
+  { label: 'Multi-Dispositivo 100%', type: 'blue' },
+  { label: 'Interfaz Inmersiva Premium', type: 'orange' },
+  { label: 'Soporte Multimoneda', type: 'blue' },
+  { label: 'Navegación Ágil por Categorías', type: 'orange' },
+  { label: 'Arquitectura Escalable', type: 'blue' },
 ]
 
 export default function IntroPanel() {
@@ -26,7 +26,7 @@ export default function IntroPanel() {
           marginBottom: 8,
         }}
       >
-        02 — Introducción &amp; Diseño
+        02 — Experiencia de Usuario & Marca
       </p>
 
       <h2
@@ -45,9 +45,9 @@ export default function IntroPanel() {
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        E-commerce de coleccionables — Funkos, figuras de acción, anime y gaming.
-        Interfaz adaptable con modo oscuro nativo, glassmorphism y experiencia
-        responsive desde 320px hasta desktop.
+        Plataforma e-commerce para indumentaria y cultura urbana. 
+        Diseñada para cautivar al cliente moderno mediante navegación fluida, 
+        estética visual prémium y adaptabilidad instantánea en cualquier pantalla.
       </p>
 
       <div
@@ -100,7 +100,7 @@ export default function IntroPanel() {
           letterSpacing: 2,
         }}
       >
-        "Diseñado para coleccionistas, construido para durar."
+        "Diseñado para vender, optimizado para fidelizar."
       </motion.p>
     </GlassPanel>
   )
