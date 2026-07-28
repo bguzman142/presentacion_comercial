@@ -26,7 +26,7 @@ export default function AuthPanel() {
           marginBottom: 8,
         }}
       >
-        06 — Seguridad & Gestión de Usuarios
+        04 — Seguridad & Gestión de Usuarios
       </p>
 
       <h2
