@@ -15,8 +15,6 @@ import RotateDevice from './components/ui/RotateDevice'
 
 import HeroPanel from './components/panels/HeroPanel'
 import IntroPanel from './components/panels/IntroPanel'
-import ArchitecturePanel from './components/panels/ArchitecturePanel'
-import TechStackPanel from './components/panels/TechStackPanel'
 import CatalogPanel from './components/panels/CatalogPanel'
 import AuthPanel from './components/panels/AuthPanel'
 import ProfilePanel from './components/panels/ProfilePanel'
@@ -32,19 +30,17 @@ import ClosingPanel15 from './components/panels/ClosingPanel15'
 const PANELS = {
   1:  HeroPanel,
   2:  IntroPanel,
-  3:  ArchitecturePanel,
-  4:  TechStackPanel,
-  5:  CatalogPanel,
-  6:  AuthPanel,
-  7:  ProfilePanel,
-  8:  CartPanel,
-  9:  PaymentsPanel,
-  10: IAPanel,
-  11: AdminPanel,
-  12: DatabasePanel,
-  13: ApiPanel,
-  14: ClosingPanel,
-  15: ClosingPanel15,
+  3:  CatalogPanel,
+  4:  AuthPanel,
+  5:  ProfilePanel,
+  6:  CartPanel,
+  7:  PaymentsPanel,
+  8:  IAPanel,
+  9:  AdminPanel,
+  10: DatabasePanel,
+  11: ApiPanel,
+  12: ClosingPanel,
+  13: ClosingPanel15,
 }
 
 export default function App() {
@@ -77,7 +73,7 @@ export default function App() {
           <ProgressBar />
 
           <AnimatePresence mode="wait" custom={direction}>
-            <ActivePanel key={currentSlide} custom={direction} />
+            {ActivePanel && <ActivePanel key={currentSlide} custom={direction} />}
           </AnimatePresence>
 
           <NavBar />
