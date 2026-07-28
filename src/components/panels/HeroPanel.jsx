@@ -21,7 +21,7 @@ export default function HeroPanel() {
           marginBottom: 16,
         }}
       >
-        01 — Presentación Ejecutiva
+        01 — Propuesta de Valor & Negocio
       </motion.p>
 
       <h1
@@ -75,7 +75,7 @@ export default function HeroPanel() {
         }}
       >
         <TypewriterText
-          text="E-commerce de Coleccionables y Gaming"
+          text="Ecosistema e-Commerce de Alta Conversión"
           speed={35}
           active={true}
           delay={1100}
@@ -97,7 +97,7 @@ export default function HeroPanel() {
           marginBottom: 8,
         }}
       >
-        Universidad del Aconcagua — Proyecto Integrador
+        Plataforma Comercial de Moda & Streetwear
       </motion.p>
 
       <motion.div
@@ -113,10 +113,10 @@ export default function HeroPanel() {
         }}
       >
         {[
-          { label: 'Coleccionables Digitales', type: 'orange' },
-          { label: 'Funkos, Anime & Gaming', type: 'orange' },
-          { label: 'Crypto Payments', type: 'blue' },
-          { label: 'AI Chatbot Llama 3', type: 'blue' },
+          { label: 'Experiencia Fluida', type: 'orange' },
+          { label: 'Checkout de Alta Conversión', type: 'orange' },
+          { label: 'Integración Crypto & FIAT', type: 'blue' },
+          { label: 'Soporte Inteligente 24/7', type: 'blue' },
         ].map(({ label, type }) => (
           <div key={label} className={`chip chip-${type}`}>
             <span className={`chip-dot chip-dot-${type}`} />
