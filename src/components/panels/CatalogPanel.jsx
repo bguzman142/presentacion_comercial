@@ -46,7 +46,7 @@ export default function CatalogPanel() {
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
         Catálogo enfocado en reducir la fricción de compra.
-        Presentación visual de alto impacto con vistas rápidas, inspección detallada de prendas 
+        Presentación visual de alto impacto con vistas rápidas, inspección detallada de productos 
         y filtros dinámicos que aceleran la decisión del comprador.
       </p>
 
