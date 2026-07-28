@@ -26,7 +26,7 @@ export default function CartPanel() {
           marginBottom: 8,
         }}
       >
-        04 — Experiencia de Compra & Retención
+        06 — Experiencia de Compra & Retención
       </p>
 
       <h2
