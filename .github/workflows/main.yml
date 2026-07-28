@@ -1,0 +1,23 @@
+name: Clonar Proyecto
+
+on:
+  workflow_dispatch:
+
+jobs:
+  copy-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout de tu repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Traer archivos del repo original
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add source https://github.com/maxifuentes2/presentacionFinal.git
+          git fetch source
+          git checkout source/main -- .
+          git commit -m "Copia completa del repositorio base para presentación comercial" || echo "No hay cambios"
+          git push origin main
