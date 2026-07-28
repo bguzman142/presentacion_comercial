@@ -1,80 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentación Comercial</title>
-  <!-- Reveal.js CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
-  <!-- Estilos personalizados -->
-  <style>
-    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
-    .highlight { color: #4299e1; }
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/webp" href="/favicon.webp" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VNTG Hub — Presentación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,700;0,800;0,900;1,500;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-  <div class="reveal">
-    <div class="slides">
-
-      <!-- Diapositiva 1: Portada -->
-      <section data-transition="zoom">
-        <h1>Presentación <span class="highlight">Comercial</span></h1>
-        <p>Soluciones estratégicas para tu negocio</p>
-        <p><small>Usa las flechas del teclado o desliza para navegar</small></p>
-      </section>
-
-      <!-- Diapositiva 2: Propuesta de valor -->
-      <section data-transition="slide">
-        <h2>¿Qué ofrecemos?</h2>
-        <div style="display: flex; justify-content: center; gap: 20px;">
-          <div class="card">
-            <h3>🚀 Innovación</h3>
-            <p>Tecnología de vanguardia para escalar tus procesos.</p>
-          </div>
-          <div class="card">
-            <h3>📈 Crecimiento</h3>
-            <p>Estrategias enfocadas en maximizar el rendimiento.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Diapositiva 3: Lista de beneficios (animada paso a paso) -->
-      <section data-transition="convex">
-        <h2>Beneficios Clave</h2>
-        <ul>
-          <li class="fragment">Optimización del tiempo operativo</li>
-          <li class="fragment">Integración sencilla y sin fricción</li>
-          <li class="fragment">Soporte continuo y especializado</li>
-        </ul>
-      </section>
-
-      <!-- Diapositiva 4: Cierre -->
-      <section data-transition="fade">
-        <h2>¿Empezamos?</h2>
-        <p class="highlight">Contacto: contacto@empresa.com</p>
-      </section>
-
-    </div>
-  </div>
-
-  <!-- Reveal.js JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
-  <script>
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      center: true,
-      hash: true,
-      transition: 'slide'
-    });
-  </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>
