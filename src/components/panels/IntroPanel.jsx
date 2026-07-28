@@ -45,7 +45,7 @@ export default function IntroPanel() {
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Plataforma e-commerce para indumentaria y cultura urbana. 
+        E-commerce de coleccionables — Funkos, figuras de acción, anime y gaming. 
         Diseñada para cautivar al cliente moderno mediante navegación fluida, 
         estética visual prémium y adaptabilidad instantánea en cualquier pantalla.
       </p>
