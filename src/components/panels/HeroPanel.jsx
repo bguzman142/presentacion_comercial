@@ -108,8 +108,9 @@ export default function HeroPanel() {
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: 12,
-          maxWidth: 800,
+          gap: 16,
+          maxWidth: 900,
+          marginTop: 16,
         }}
       >
         {[
@@ -118,7 +119,14 @@ export default function HeroPanel() {
           { label: 'Integración Crypto & FIAT', type: 'blue' },
           { label: 'Soporte Inteligente 24/7', type: 'blue' },
         ].map(({ label, type }) => (
-          <div key={label} className={`chip chip-${type}`}>
+          <div
+            key={label}
+            className={`chip chip-${type}`}
+            style={{
+              padding: '14px 28px',
+              fontSize: '15px',
+            }}
+          >
             <span className={`chip-dot chip-dot-${type}`} />
             {label}
           </div>
