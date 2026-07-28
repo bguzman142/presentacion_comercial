@@ -26,7 +26,7 @@ export default function AdminPanel() {
           marginBottom: 8,
         }}
       >
-        07 — Gestión & Operaciones
+        09 — Gestión & Operaciones
       </p>
 
       <h2
