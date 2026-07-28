@@ -8,16 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout de tu repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v4
 
-      - name: Traer archivos del repo original
+      - name: Clonar y sobreescribir archivos
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote add source https://github.com/maxifuentes2/presentacionFinal.git
-          git fetch source
-          git checkout source/main -- .
-          git commit -m "Copia completa del repositorio base para presentación comercial" || echo "No hay cambios"
+          
+          # Clonar repo original en carpeta temporal
+          git clone https://github.com/maxifuentes2/presentacionFinal.git temp_repo
+          
+          # Copiar todo exceptuando la carpeta .git para no romper el historial
+          rsync -av --exclude='.git' temp_repo/ ./
+          rm -rf temp_repo
+          
+          # Subir cambios
+          git add .
+          git commit -m "Copia limpia del repositorio base" || echo "Sin cambios"
           git push origin main
