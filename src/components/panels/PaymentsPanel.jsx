@@ -3,12 +3,12 @@ import GlassPanel from '../shared/GlassPanel'
 import VideoPlayer from '../shared/VideoPlayer'
 
 const features = [
-  { label: 'Mercado Pago SDK',       type: 'orange' },
-  { label: 'Webhooks Estado',        type: 'blue' },
-  { label: 'Crypto QR Dinámico',     type: 'orange' },
-  { label: 'USDT / BTC / ETH',       type: 'blue' },
-  { label: 'Transferencia Multer',   type: 'orange' },
-  { label: 'Selector USD / ARS',     type: 'blue' },
+  { label: 'Mercado Pago Integrado', type: 'orange' },
+  { label: 'Confirmación Automática', type: 'blue' },
+  { label: 'Aceptación de Criptomonedas', type: 'orange' },
+  { label: 'Cobro en USDT / BTC / ETH', type: 'blue' },
+  { label: 'Validación de Comprobantes', type: 'orange' },
+  { label: 'Conversión Multimoneda (USD/ARS)', type: 'blue' },
 ]
 
 export default function PaymentsPanel() {
@@ -26,7 +26,7 @@ export default function PaymentsPanel() {
           marginBottom: 8,
         }}
       >
-        09 — Pasarelas de Pago
+        05 — Soluciones de Pago Flexibles
       </p>
 
       <h2
@@ -41,14 +41,13 @@ export default function PaymentsPanel() {
           letterSpacing: -0.5,
         }}
       >
-        Pagos y Finanzas
+        Pasarela de Pagos
       </h2>
 
       <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 22, lineHeight: 1.55 }}>
-        Integración con Mercado Pago SDK y webhooks para actualización de estados.
-        Pagos con criptomonedas (USDT, BTC, ETH) mediante QR dinámico, montos
-        mínimos y precios en tiempo real. Subida de comprobantes con Multer y
-        selector multi-moneda USD/ARS con tasa actualizada cada 60s.
+        Ecosistema financiero omnicanal preparado para el mercado global e internacional.
+        Acepta tarjetas de crédito/débito vía Mercado Pago, criptomonedas en tiempo real 
+        y transferencias bancarias con validación rápida de comprobantes.
       </p>
 
       <div
