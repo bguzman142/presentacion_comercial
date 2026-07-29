@@ -29,7 +29,7 @@ export default function DatabasePanel() {
           marginBottom: 8,
         }}
       >
-        12 — Base de Datos
+        10 — INFRAESTRUCTURA Y BASE DE DATOS
       </p>
 
       <h2
@@ -44,13 +44,12 @@ export default function DatabasePanel() {
           letterSpacing: -0.5,
         }}
       >
-        Diseño de Base de Datos
+        DISEÑO DE BASE DE DATOS
       </h2>
 
-      <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 18, lineHeight: 1.55 }}>
-        Esquema relacional en MySQL con 10 tablas principales, índices
-        optimizados, stored procedures para operaciones críticas y triggers
-        de auditoría.
+      <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 26, color: 'rgba(161,161,170,0.8)', marginBottom: 18, lineHeight: 1.55, maxWidth: 900 }}>
+        Construido sobre una infraestructura en la nube de alta disponibilidad.
+        Preparado para absorber picos masivos de tráfico y eventos de alta demanda sin comprometer el rendimiento.
       </p>
 
       <div
@@ -116,11 +115,11 @@ export default function DatabasePanel() {
           fontWeight: 700,
           fontStyle: 'italic',
           textTransform: 'uppercase',
-          color: 'rgba(0,86,179,0.4)',
+          color: 'rgba(0,86,179,0.5)',
           letterSpacing: 2,
         }}
       >
-        "Datos bien estructurados, decisiones informadas."
+        "DISPONIBILIDAD TOTAL PARA DROPS Y LANZAMIENTOS DE ALTA DEMANDA."
       </motion.p>
     </GlassPanel>
   )
