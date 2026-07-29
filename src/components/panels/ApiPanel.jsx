@@ -2,16 +2,16 @@ import { motion } from 'framer-motion'
 import GlassPanel from '../shared/GlassPanel'
 
 const endpoints = [
-  { method: 'POST', path: '/api/auth/register', desc: 'Registro de usuario', color: 'orange' },
-  { method: 'POST', path: '/api/auth/login', desc: 'Inicio de sesión', color: 'orange' },
-  { method: 'GET',  path: '/api/products', desc: 'Listar productos con filtros', color: 'blue' },
-  { method: 'GET',  path: '/api/products/:id', desc: 'Detalle de producto', color: 'blue' },
-  { method: 'GET',  path: '/api/categories', desc: 'Categorías disponibles', color: 'orange' },
-  { method: 'POST', path: '/api/orders', desc: 'Crear pedido', color: 'orange' },
-  { method: 'GET',  path: '/api/orders/:id', desc: 'Estado del pedido', color: 'blue' },
-  { method: 'POST', path: '/api/payments/mp', desc: 'Pago Mercado Pago', color: 'orange' },
-  { method: 'POST', path: '/api/payments/crypto', desc: 'Pago cripto', color: 'blue' },
-  { method: 'POST', path: '/api/chatbot', desc: 'Consulta al chatbot IA', color: 'orange' },
+  { method: 'POST', path: '/API/AUTH/REGISTER', desc: 'Registro seguro de clientes', type: 'orange' },
+  { method: 'POST', path: '/API/AUTH/LOGIN', desc: 'Autenticación y sesiones', type: 'orange' },
+  { method: 'GET', path: '/API/PRODUCTS', desc: 'Catálogo y stock en tiempo real', type: 'blue' },
+  { method: 'GET', path: '/API/PRODUCTS/:ID', desc: 'Ficha detallada del coleccionable', type: 'blue' },
+  { method: 'GET', path: '/API/CATEGORIES', desc: 'Filtros por nicho y colecciones', type: 'blue' },
+  { method: 'POST', path: '/API/ORDERS', desc: 'Gestión y checkout de pedidos', type: 'orange' },
+  { method: 'GET', path: '/API/ORDERS/:ID', desc: 'Seguimiento y logística', type: 'blue' },
+  { method: 'POST', path: '/API/PAYMENTS/MP', desc: 'Pasarela de pagos (MercadoPago)', type: 'orange' },
+  { method: 'POST', path: '/API/PAYMENTS/CRYPTO', desc: 'Procesamiento de pagos crypto', type: 'orange' },
+  { method: 'POST', path: '/API/CHATBOT', desc: 'Asistencia y recomendador IA', type: 'orange' },
 ]
 
 export default function ApiPanel() {
@@ -26,10 +26,10 @@ export default function ApiPanel() {
           letterSpacing: 6,
           textTransform: 'uppercase',
           color: 'rgba(255,90,0,0.6)',
-          marginBottom: 4,
+          marginBottom: 8,
         }}
       >
-        13 — API REST
+        11 — INTEGRACIONES Y API
       </p>
 
       <h2
@@ -40,80 +40,78 @@ export default function ApiPanel() {
           textTransform: 'uppercase',
           fontSize: 'clamp(42px, 6vw, 72px)',
           color: '#f4f4f5',
-          marginBottom: 4,
+          marginBottom: 6,
           letterSpacing: -0.5,
         }}
       >
-        Estructura de la API
+        ARQUITECTURA MODULAR
       </h2>
 
-      <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 28, color: 'rgba(161,161,170,0.65)', marginBottom: 10, lineHeight: 1.55 }}>
-        API RESTful con autenticación JWT, middleware de roles, validación de
-        datos y respuestas normalizadas. Documentación interactiva disponible.
+      <p style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 500, fontStyle: 'italic', fontSize: 26, color: 'rgba(161,161,170,0.8)', marginBottom: 18, lineHeight: 1.55, maxWidth: 900 }}>
+        Arquitectura modular que facilita la conexión con servicios de logística, marketing y analítica avanzada, garantizando que la plataforma crezca a la par de tu negocio.
       </p>
 
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 8,
+          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gap: 12,
           width: '100%',
-          maxWidth: 800,
-          marginBottom: 4,
+          maxWidth: 880,
+          marginBottom: 10,
         }}
       >
         {endpoints.map((ep, i) => (
           <motion.div
             key={ep.path}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.12 + i * 0.04 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2 + i * 0.05 }}
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 12,
-              background: 'rgba(255,255,255,0.02)',
-              border: '1px solid rgba(255,255,255,0.04)',
-              borderRadius: 6,
-              padding: '10px 16px',
+              background: 'rgba(255,90,0,0.04)',
+              border: `1px solid ${ep.type === 'orange' ? 'rgba(255,90,0,0.18)' : 'rgba(0,86,179,0.22)'}`,
+              borderRadius: 10,
+              padding: '12px 16px',
+              textAlign: 'left',
             }}
           >
-            <span
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2 }}>
+              <span
+                style={{
+                  fontFamily: "'Barlow', sans-serif",
+                  fontWeight: 900,
+                  fontSize: 12,
+                  padding: '2px 6px',
+                  borderRadius: 4,
+                  backgroundColor: ep.type === 'orange' ? 'rgba(255,90,0,0.2)' : 'rgba(0,86,179,0.2)',
+                  color: ep.type === 'orange' ? '#ff5a00' : '#0056b3',
+                }}
+              >
+                {ep.method}
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Barlow', sans-serif",
+                  fontWeight: 700,
+                  fontStyle: 'italic',
+                  fontSize: 15,
+                  color: '#f4f4f5',
+                }}
+              >
+                {ep.path}
+              </span>
+            </div>
+            <div
               style={{
-                fontFamily: "'Barlow', sans-serif",
-                fontWeight: 700,
-                fontStyle: 'italic',
-                textTransform: 'uppercase',
                 fontSize: 13,
-                letterSpacing: 1,
-                padding: '2px 8px',
-                borderRadius: 4,
-                background: ep.method === 'GET'
-                  ? 'rgba(0,86,179,0.15)'
-                  : 'rgba(255,90,0,0.15)',
-                color: ep.method === 'GET' ? '#0056b3' : '#ff5a00',
-                minWidth: 42,
-                textAlign: 'center',
-                flexShrink: 0,
-              }}
-            >
-              {ep.method}
-            </span>
-            <span
-              style={{
+                color: 'rgba(161,161,170,0.6)',
                 fontFamily: "'Barlow', sans-serif",
-                fontWeight: 700,
+                fontWeight: 500,
                 fontStyle: 'italic',
-                textTransform: 'uppercase',
-                fontSize: 15,
-                color: 'rgba(244,244,245,0.8)',
-                whiteSpace: 'nowrap',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
               }}
             >
-              {ep.path}
-            </span>
+              {ep.desc}
+            </div>
           </motion.div>
         ))}
       </div>
@@ -121,19 +119,19 @@ export default function ApiPanel() {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.9 }}
+        transition={{ delay: 1 }}
         style={{
-          marginTop: 6,
+          marginTop: 12,
           fontSize: 20,
           fontFamily: "'Barlow', sans-serif",
           fontWeight: 700,
           fontStyle: 'italic',
           textTransform: 'uppercase',
-          color: 'rgba(255,90,0,0.4)',
+          color: 'rgba(0,86,179,0.5)',
           letterSpacing: 2,
         }}
       >
-        "Cada endpoint, un propósito claro."
+        "ESCALABILIDAD E INTEGRACIÓN SIN LÍMITES."
       </motion.p>
     </GlassPanel>
   )
