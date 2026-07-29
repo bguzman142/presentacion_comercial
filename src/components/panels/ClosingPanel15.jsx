@@ -19,7 +19,7 @@ export default function ClosingPanel15() {
           marginBottom: 24,
         }}
       >
-        15 — Cierre
+        13 — Cierre
       </motion.p>
 
       <motion.h2
@@ -55,7 +55,7 @@ export default function ClosingPanel15() {
           marginBottom: 8,
         }}
       >
-        VNTG Hub
+        VNTG HUB
       </motion.p>
 
       <motion.p
